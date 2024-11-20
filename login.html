@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel Login</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="logintodashboard.js" defer></script> 
+</head>
+<body>
+    <div class="login-container">
+        <h2><b>Login</b></h2>
+        <p>to get started</p>
+        <form action="/login" method="post"> <!-- Updated action -->
+            <div class="form-group">
+                <input type="text" id="username" name="username" placeholder="Enter your username" required> <!-- Updated placeholder -->
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" name="password" placeholder="Enter your password" required> <!-- Updated placeholder -->
+            </div>
+            <div class="form-group">
+                <a href="forgot-password.html" class="forgot-password">Forgot Password?</a>
+            </div>
+            <button type="submit">Continue</button>
+            <div class="form-group">
+                <a href="register.html" class="register-link">New User? Register</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

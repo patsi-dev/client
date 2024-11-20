@@ -1,0 +1,219 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 20px;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: #ffff;
+    color: #0000ff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 1em 0;
+    text-align: center;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    background-color: #fff;
+}
+
+nav ul li a i {
+    margin-right: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #f5f5dd;
+    color: #333;
+}
+
+.help {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    color: #333;
+}
+
+.help i {
+    margin-right: 10px; 
+}
+
+
+header {
+    padding: 20px;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.search-container {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.search-bar {
+    flex: 1;
+    padding: 10px 10px 10px 30px; /* Adjust padding for icon space */
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    border-right: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.search-bar:focus {
+    outline: none;
+    border-color: #333;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    border-left: none; /* Removes border between button and input */
+    border-radius: 0 4px 4px 0; /* Rounded right corners */
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #bbb; /* Slightly darker on hover */
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #ccc;
+    pointer-events: none; /* Icon does not interfere with input */
+}
+
+.sales-info {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.sales-info h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.filters {
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+    align-items:flex-end;
+}
+
+.filters div {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-width: 150px;
+}
+
+.filters input,
+.filters button {
+    width: 100%; /* Ensure all input and button elements take up full width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.filters label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.filters input[type="date"] {
+    padding: 5px;
+}
+
+.filters button {
+    width: auto;
+    background-color: #f5f5dd;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: flex-start; /* Aligns the button to the start */
+    margin-top: 25px;
+}
+
+.filters button:hover {
+    background-color: #875F42;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead th {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+tbody td {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+tbody td input[type="checkbox"] {
+    margin: 0;
+}

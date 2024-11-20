@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicles Information</title>
+    <link rel="stylesheet" href="inventory.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">Car Dealership</div>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html"><i class="fas fa-th-large"></i> Dashboard</a></li>
+                    <li><a href="inventory.html"><i class="fas fa-car"></i> Vehicles</a></li>
+                    <li><a href="employees.html"><i class="fas fa-user-tie"></i> Employees</a></li>
+                    <li><a href="customers.html"><i class="fas fa-users"></i> Customers</a></li>
+                    <li><a href="messages.html"><i class="fas fa-envelope"></i> Messages</a></li>
+                    <li><a href="sales.html"><i class="fas fa-dollar-sign"></i> Sales</a></li>
+                    <li><a href="payments.html"><i class="fas fa-wallet"></i> Payments</a></li>
+                    <li><a href="settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+                </ul>
+            </nav>
+            <div class="help"><i class="fas fa-question-circle"></i> Help</div>
+        </aside>
+        <main class="main-content">
+            <header>
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="search-bar" placeholder="Search">
+                    <button class="search-button">Search</button>
+                </div>
+            </header>
+            <section id="vehicles" class="vehicles-info">
+                <h2>Vehicles Information</h2>
+                <div class="filters">
+                    <div class="cust-invo-filter">
+                        <label for="make">Make</label>
+                        <input type="text" id="make" placeholder="Make">
+                    </div>
+                    <div class="cust-invo-filter">
+                        <label for="model">Model</label>
+                        <input type="text" id="model" placeholder="Model">
+                    </div>
+                    <div class="cust-invo-filter">
+                        <label for="price">Price</label>
+                        <input type="text" id="price" placeholder="Price">
+                    </div>
+                    <button>Filter</button>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox" id="select-all"></th>
+                            <th>Image</th>
+                            <th>Make</th>
+                            <th>Model</th>
+                            <th>Year</th>
+                            <th>Price</th>
+                            <th>Color</th>
+                            <th>Mileage</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody id="vehicles-table-body">
+                        <!-- Data will be populated here -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
